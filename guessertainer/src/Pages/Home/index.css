@@ -1,0 +1,40 @@
+body {
+  padding: 3em;
+}
+
+.StartScreen {
+  text-align: center;
+}
+
+.StartScreen hr {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+
+.games-list {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.games-list li{
+  padding: 0.5em;
+}
+
+.games-list button {
+  padding: 0.75em;
+  font-size: 1.5em;
+
+  background-color: #00DFFF;
+
+  border-radius: 0.25em;
+
+  border: 1px solid #196de6;
+}
+
+.games-list button:hover {
+  background-color: #00c4e0;
+  color: #fff;
+
+  box-shadow: 2px 2px 8px #999;
+}
