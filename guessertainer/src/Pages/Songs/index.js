@@ -6,6 +6,7 @@ export default () => {
         <>
             <h1>Welcome to the songs game</h1>
             <p>Not yet implemented</p>
+
             <Link to={"/"}>Back</Link>
         </>
     )
