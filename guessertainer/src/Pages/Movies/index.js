@@ -22,7 +22,7 @@ const GetInputField = (arr) => {
     })} </>
 }
 
-// Get an formatted guess list for the start of the game
+// Get a formatted guess list for the start of the game
 const EmptyGuessList = (string) => {
     return string.split('').map((letter) => {
         if (letter === " ") {
