@@ -1,0 +1,80 @@
+.MovieGuesser {
+    text-align: center;
+}
+
+.MovieGuesser #rules {
+    padding: 2em;
+    border: 1px solid #999;
+    background-color: #eee;
+
+    border-radius: 0.4em;
+}
+
+.hide {
+    display: none;
+}
+
+#inputField {
+    list-style-type: none;
+
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#inputField span.letter{
+    vertical-align: top;
+
+    display: inline-flex;
+    justify-content: space-around;
+    line-height: 2em;
+
+    height: 2em;
+    width: 2em;
+    margin: .25em;
+
+    background-color: #eee;
+
+    border: 1px solid deepskyblue;
+    border-radius: 0.5em;
+
+    font-weight: bolder;
+
+    font-size: 30px;
+}
+
+#inputField span.letter.empty {
+    border-color: #dcc;
+    background-color: #caa;
+}
+
+#usedLetters .letter {
+    vertical-align: top;
+
+    display: inline-flex;
+    justify-content: space-around;
+    line-height: 1.5em;
+
+    height: 1.5em;
+    width: 1.5em;
+    margin: .25em;
+
+    border-radius: 0.5em;
+
+    font-weight: bolder;
+
+    font-size: 30px;
+}
+
+#usedLetters {
+    margin-bottom: 3em;
+}
+
+#usedLetters .letter.correct {
+    border: 1px solid #008e00;
+    background-color: #54ea54;
+}
+
+#usedLetters .letter.incorrect {
+    border: 1px solid #8e0000;
+    background-color: #ea7c7c;
+}
