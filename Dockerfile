@@ -3,13 +3,13 @@ FROM node:16
 WORKDIR /usr/src/movieguesser
 
 #----- Install dependencies
-COPY ./guessertainer/package*.json ./
+COPY package*.json ./
 RUN npm install
 RUN npm install react-scripts@5.0.1 -g
 
 
 #----- Copy over the source
-COPY ./guessertainer/ .
+COPY . .
 
 #----- Build the application
 RUN npm run build
