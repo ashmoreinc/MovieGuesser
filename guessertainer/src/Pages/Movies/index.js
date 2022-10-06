@@ -86,7 +86,6 @@ export default () => {
         // Check the game state
 
         if(!gameStarted) {
-            console.log("wtf")
             SetShowGameOver('hide')
             return
         }
@@ -137,6 +136,9 @@ export default () => {
             answer = json["answer"].toLowerCase()
             guessed = EmptyGuessList(json["answer"])
             setInputField(GetInputField(guessed));
+        }).catch((error) => {
+            setInputField(<p>Internal server error: Could not connect</p>)
+            gameStarted = false;
         })
     }
 
